@@ -152,8 +152,8 @@
       "ckan_name": "Default",
 			"value": {
 				"Measure Type": "Percent",
-		 		"District": "Achievement First Bridgeport Academy District",
-		 		"Year": ["2011-2012"],
+		 		"District": "Connecticut",
+		 		"Year": ["2015-2016"],
 		 		"Variable": "Chronically Absent Students"
 			},
 		  	"type": "object"
