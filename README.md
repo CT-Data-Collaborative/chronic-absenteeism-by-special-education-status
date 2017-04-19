@@ -1,7 +1,10 @@
 Chronic-Absenteeism-by-Special-Education-Status
 
 [![Build Status](https://travis-ci.org/CT-Data-Collaborative/chronic-absenteeism-by-special-education-status.svg?branch=master)](https://travis-ci.org/CT-Data-Collaborative/chronic-absenteeism-by-special-education-status)
-A short description of the project.
+
+Chronic Absenteeism reports the percentage of chronically absent students during a school year, per subgroup.
+
+Data Source: <http://edsight.ct.gov/>
 
 ## License MIT
 

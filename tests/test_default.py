@@ -4,7 +4,7 @@ import pytest
 #
 # Basic testing script for Chronic-Absenteeism-by-Special-Education-Status
 # Created by Jenna Daly
-# On 03/16/2017
+# On 
 #
 ##################################################################
 
@@ -27,7 +27,7 @@ def test_schema_validation(schema_test):
 def test_schema_validation(schema):
     dimensions = [s for s in schema if s['dimension']]
     for d in dimensions:
-	assert isinstance(d["constraints"]["enum"], list)
+        assert isinstance(d["constraints"]["enum"], list)
 
 def test_domain_subdomain_validation(domain_map, domain, subdomain):
     assert domain in domain_map
