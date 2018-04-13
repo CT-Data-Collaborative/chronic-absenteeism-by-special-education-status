@@ -2,7 +2,7 @@
   "name": "chronic-absenteeism-by-special-education-status",
   "datapackage_version": "1.0-beta.18",
   "title": "Chronic Absenteeism by Special Education Status",
-  "description": "Chronic Absenteeism reports the percentage of chronically absent students during a school year, per subgroup.",
+  "description": "Chronic Absenteeism reports the percentage of chronically absent students during a school year, per special education status.",
   "version": "1.0",
   "licenses": [{
     "url": "http://opendatacommons.org/licenses/pddl/",
@@ -21,7 +21,7 @@
   }],
   "contributor": [],
   "resources": [{
-    "path": "data/chronic_absenteeism_by_special_education_status_2012-2016.csv",
+    "path": "data/chronic_absenteeism_by_special_education_status_2012-2017.csv",
     "format": "csv",
     "schema": {
       "fields": [{
@@ -72,7 +72,7 @@
       }
     }
   ],
-  "last_modified": "03/16/2017",
+  "last_modified": "04/13/2018",
   "ckan_extras": {
     "full_description": {
       "ckan_name": "Full Description",
@@ -81,7 +81,7 @@
     },
     "suppression": {
       "ckan_name": "Suppression",
-      "value": "Disaggregations resulting in counts of less than 20 students are suppressed",
+      "value": "Disaggregations where either the numerator is less than 6 or the denominator is less than 20 are suppressed.",
       "type": "string"
     },
     "technical_notes": {
@@ -109,6 +109,16 @@
       "value": "Student Behavior",
       "type": "string"
     },
+    "numerator": {
+      "ckan_name": "Numerator",
+      "value": "Total number of chronically absent students, per subgroup.",
+      "type": "string"
+    },
+    "denominator": {
+      "ckan_name": "Denominator",
+      "value": "Total number of students, per subgroup.",
+      "type": "string"
+    },
     "geography": {
       "ckan_name": "Geography",
       "value": "District",
@@ -122,12 +132,12 @@
     },
     "years_in_catalog": {
       "ckan_name": "Years in Catalog",
-      "value": ["2011-2012", "2012-2013", "2013-2014", "2014-2015", "2015-2016"],
+      "value": ["2011-2012", "2012-2013", "2013-2014", "2014-2015", "2015-2016", "2016-2017"],
       "type": "array"
     },
     "latest_year": {
       "ckan_name": "Latest Year Available",
-      "value": "2015-2016",
+      "value": "2016-2017",
       "type": "string"
     },
     "disabled_views": {
@@ -153,7 +163,7 @@
 			"value": {
 				"Measure Type": "Percent",
 		 		"District": "Connecticut",
-		 		"Year": ["2015-2016"],
+		 		"Year": ["2016-2017"],
 		 		"Variable": "Chronically Absent Students"
 			},
 		  	"type": "object"

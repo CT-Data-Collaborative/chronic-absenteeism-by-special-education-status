@@ -51,7 +51,8 @@ years <- c("2011-2012",
            "2012-2013",
            "2013-2014",
            "2014-2015",
-           "2015-2016")
+           "2015-2016", 
+           "2016-2017")
 
 backfill_years <- expand.grid(
   `FixedDistrict` = unique(districts$`FixedDistrict`),
@@ -119,7 +120,7 @@ test2<-test[duplicated(test), ]
 #Write CSV
 write.table(
   complete_chronic_absent_long,
-  file.path(path_to_top_level, "data", "chronic_absenteeism_by_special_education_status_2012-2016.csv"),
+  file.path(path_to_top_level, "data", "chronic_absenteeism_by_special_education_status_2012-2017.csv"),
   sep = ",",
   row.names = F
 )
