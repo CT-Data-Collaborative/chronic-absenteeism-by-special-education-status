@@ -15,13 +15,13 @@
     "web": ""
   }],
   "author":[{
-    "name": "Jenna Daly",
-    "email": "jdaly@ctdata.org",
-    "web": "http://ctdata.org"
+    "name": "CTData Collaborative",
+    "email": "info@ctdata.org",
+    "web": "https://ctdata.org"
   }],
   "contributor": [],
   "resources": [{
-    "path": "data/chronic_absenteeism_by_special_education_status_2012-2017.csv",
+    "path": "data/chronic_absenteeism_by_special_education_status_2012-2020.csv",
     "format": "csv",
     "schema": {
       "fields": [{
@@ -72,11 +72,11 @@
       }
     }
   ],
-  "last_modified": "04/13/2018",
+  "last_modified": "03/23/2021",
   "ckan_extras": {
     "full_description": {
       "ckan_name": "Full Description",
-      "value": "A student is chronically absent if he/she misses ten percent or greater of the total number of days enrolled in the school year for any reason. Pre-Kindergarten students are excluded from this calculation. Connecticut State Department of Education collects annual data for grades K through 12, based on June reports of attendance. Charter Districts have been entered as individual districts.",
+      "value": "A student is chronically absent if he/she misses ten percent or greater of the total number of days enrolled in the school year for any reason. Pre-Kindergarten students are excluded from this calculation. Connecticut State Department of Education collects annual data for grades K through 12, based on June reports of attendance. Charter Districts have been entered as individual districts. For the 2019-20 school year, chronic absenteeism calculations are based only on in-person school days until mid-March 2020.",
       "type": "string"
     },
     "suppression": {
@@ -132,12 +132,12 @@
     },
     "years_in_catalog": {
       "ckan_name": "Years in Catalog",
-      "value": ["2011-2012", "2012-2013", "2013-2014", "2014-2015", "2015-2016", "2016-2017"],
+      "value": ["2011-2012", "2012-2013", "2013-2014", "2014-2015", "2015-2016", "2016-2017", "2017-2018", "2018-2019", "2019-2020"],
       "type": "array"
     },
     "latest_year": {
       "ckan_name": "Latest Year Available",
-      "value": "2016-2017",
+      "value": "2019-2020",
       "type": "string"
     },
     "disabled_views": {
@@ -163,7 +163,7 @@
 			"value": {
 				"Measure Type": "Percent",
 		 		"District": "Connecticut",
-		 		"Year": ["2016-2017"],
+		 		"Year": ["2019-2020"],
 		 		"Variable": "Chronically Absent Students"
 			},
 		  	"type": "object"

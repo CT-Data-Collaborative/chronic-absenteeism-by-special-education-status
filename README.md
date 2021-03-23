@@ -2,7 +2,9 @@ Chronic-Absenteeism-by-Special-Education-Status
 
 Chronic Absenteeism reports the percentage of chronically absent students during a school year, per special education status.
 
-Data Source: <http://edsight.ct.gov/>
+Data Source: <http://edsight.ct.gov/> (Students > Attendance > "Export .csv file").
+
+**Note** EdSight may change district spellings (for example, drop *Inc.* or add *The*). If the processed dataset contains `-6666` (missing values) for districts that exist in raw files, go to [ct-school-district-list](https://github.com/CT-Data-Collaborative/ct-school-district-list) lookup and add new entries. The R script uses that crosswalk to standardize district names.
 
 ## License MIT
 
